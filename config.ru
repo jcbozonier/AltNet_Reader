@@ -1,3 +1,3 @@
-require 'lib/app'
+require 'lib/production'
 
 run Sinatra::Application
