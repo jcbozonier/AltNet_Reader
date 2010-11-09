@@ -1,3 +1,3 @@
-require 'lib/production'
+require 'lib/production_config'
 
 run Sinatra::Application
