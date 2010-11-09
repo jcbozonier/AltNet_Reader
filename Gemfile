@@ -1,1 +1,3 @@
+source :gemcutter
+
 gem 'sinatra'
