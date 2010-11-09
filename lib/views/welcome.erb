@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Welcome to Alt.NET Reader</Title>
+  </head>
+  <body>
+    <h1>Alt.NET Reader</h1>
+    <form action='/book_loan' method='post'>
+      <ul>
+        <li>Borrower Name: <input name="borrower_name" value="" /></li>
+        <li>Email Address: <input name="email_address" value="" /></li>
+        <li>Book Name: <input name="book_name" value="" /></li>
+      </ul>
+      <input type='submit' value='Borrow' />
+    </form>
+    
+    Borrowed books:
+    <table>
+      <% for book in @books %>
+      <tr>
+        <td><%= book.borrower_name %></td>
+        <td><%= book.email_address %></td>
+        <td><%= book.book_name %></td>
+      </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
