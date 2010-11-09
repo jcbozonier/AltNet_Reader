@@ -1,5 +1,5 @@
 require 'sinatra'
-require  'dm-migrations'
+require 'dm-migrations'
 require 'dm-core'
 set :show_exceptions, true
 
